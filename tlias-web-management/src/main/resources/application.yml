@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: tlias-web-management
+  datasource:
+    name: springboot-mybatis-quickstart
+    url: jdbc:mysql://localhost:3306/tlias?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 061209
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #驼峰命名映射开关
+    map-underscore-to-camel-case: true
+
